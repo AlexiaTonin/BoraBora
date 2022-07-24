@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <link rel="icon" href="./assets/iconoContacto.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Spirax&family=Splash&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario de Contacto</title>
+  </head>
+  <body>
+    <header class="form">
+      <h1>Formulario de Contacto</h1>
+      <a href="../index.html">Volver</a>
+    </header>
+    <main>
+      <form class="contact">
+        <div>
+          <label for="nombre">
+            <b> Nombre y Apellido </b>
+            <input class="formControl" type="text" name="nombre" id="nombre" required maxlength="30" minlength="3"/>
+          </label>
+        </div>
+        <div>
+          <label for="email">
+            <b>Email</b>
+            <input class="formControl" type="email" name="email" id="email" required/>
+          </label>
+        </div>
+        <div>
+          <label for="pais">
+            <b>País</b>
+            <input class="formControl" type="text" name="pais" id="pais" required/>
+          </label>
+        </div>
+        <div>
+          <label for="cp">
+            <b>Código Postal</b>
+            <input class="formControl" type="text" name="cp" id="cp" required />
+          </label>
+        </div>
+        <div>
+          <label for="tel">
+            <b>Teléfono de Contacto</b>
+            <input class="formControl" type="number" name="tel" id="tel" required/>
+          </label>
+        </div>
+        <div>
+          <input checked type="radio" name="modalidad" id="phone" required />
+          <label for="phone"><b>Fijo</b></label>
+          <input type="radio" name="modalidad" id="cellPhone" required />
+          <label for="cellphone"><b>Celular</b></label>
+        </div>
+        <div>
+          <label for="lugares">
+            <b>Que lugares desea visitar</b>
+            <select name="lugares" id="lugares">
+              <option disabled hidden selected value="eligeUnLugar">
+                Elige un lugar
+              </option>
+              <option value="matira">Playa Punta Matira</option>
+              <option value="motuTevairoa">Playa de Motu Tevairoa</option>
+              <option value="motuPitiAau">Playa de Motu Piti Aau</option>
+              <option value="costasDeTahaa">Las Costas de Tahaa</option>
+              <option value="varios">Dos o más lugares</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <p class="destinos">Destinos Adicionales</p>
+          <textarea name="destinos" id="destinos" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="acepto">
+            <input type="checkbox" name="acepto" id="acepto" required />
+            <b>He leído y acepto los términos y condiciones</b>
+          </label>
+        </div>
+        <button class="botonForm" type="submit">Enviar Formulario</button>
+      </form>
+    </main>
+    <footer>
+      <div class="copyright">
+        Copyright &copy; 2020-2022 Bora Bora inc., todos los derechos
+        reservados.
+      </div>
+    </footer>
+  </body>
+</html>

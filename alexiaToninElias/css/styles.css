@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbarMenu,
+.video {
+  width: 100%;
+}
+.navbarMenu {
+  background: rgb(253, 251, 77);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 251, 77, 1) 0%,
+    rgba(249, 249, 252, 1) 29%,
+    rgba(44, 186, 209, 1) 91%
+  );
+  text-align: end;
+  padding: 0 5px 5px 0;
+  position: fixed;
+  opacity: 0.8;
+}
+.titulo {
+  padding-top: 15px;
+  color: rgb(61, 61, 61);
+  font-family: "Splash", cursive;
+  font-size: 1.45rem;
+}
+.titulo,
+.info {
+  font-weight: 800;
+}
+.titulo,
+.table,
+.copyright {
+  text-align: center;
+}
+.contact {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: right;
+  padding: 0 25px 15px 0;
+  color: navy;
+  font-family:'Edu SA Beginner', cursive;
+}
+#login:hover {
+  color: azure;
+  transition: 2ms;
+}
+.video {
+  box-sizing: border-box;
+  height: 50vh;
+  padding-top: 5rem;
+}
+.info {
+  font-size: 25px;
+  text-align: justify;
+  padding: 20px 10px 15px 10px;
+  font-family: "Poppins", sans-serif;
+}
+.info::first-letter {
+  color: #92e5f0;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.lista {
+  background: rgb(255, 245, 207);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 245, 207, 1) 15%,
+    rgba(44, 186, 209, 1) 74%
+  );
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 35px 15px 25px;
+  font-family: "Oswald", sans-serif;
+}
+.titulos {
+  color: rgb(61, 61, 61);
+}
+.table {
+  width: 100%;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+th {
+  border: 3px solid rgba(61, 127, 147, 0.724);
+}
+td {
+  border: 3px solid rgba(61, 127, 147, 0.724);
+}
+.linkBooking {
+  text-decoration: none;
+  color: darkblue;
+}
+footer {
+  background: rgb(255, 228, 128);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 228, 128, 1) 36%,
+    rgba(255, 249, 215, 1) 83%
+  );
+  text-align: end;
+  padding: 15px 10px 5px 0;
+}
+.linkInicio {
+  text-decoration: none;
+  color: navy;
+  font-size: 20px;
+  font-family:'Edu SA Beginner', cursive;
+}
+.linkInicio:hover {
+  color: rgb(76, 69, 11);
+  font-weight: bolder;
+}
